@@ -1,0 +1,71 @@
+/* ── BM Global Ventures — Black & Gold Theme ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Gold button */
+.btn-primary { background-color: #D4AF37; color: #000; font-weight: 600; }
+.btn-primary:hover:not(:disabled) { background-color: #C9A028; }
+
+/* Outlined button (adapts to dark nav) */
+.btn-secondary { background-color: white; color: #374151; border: 1px solid #d1d5db; }
+.btn-secondary:hover:not(:disabled) { background-color: #f9fafb; }
+
+.btn-danger { background-color: #dc2626; color: white; }
+.btn-danger:hover:not(:disabled) { background-color: #b91c1c; }
+.btn-sm { padding: 0.375rem 0.75rem; font-size: 0.8125rem; }
+
+/* Gold-outline nav button */
+.btn-nav {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.375rem 0.75rem; border-radius: 0.5rem; font-weight: 500;
+  font-size: 0.8125rem; transition: all 0.15s ease; cursor: pointer;
+  border: 1px solid #D4AF37; color: #D4AF37; background: transparent;
+}
+.btn-nav:hover { background: rgba(212,175,55,0.12); }
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #111827;
+  background: white;
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+.input:focus { border-color: #D4AF37; box-shadow: 0 0 0 2px rgba(212,175,55,0.25); }
+.input::placeholder { color: #9ca3af; }
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+body { background-color: #f9fafb; color: #111827; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+* { box-sizing: border-box; }
